@@ -1,0 +1,1 @@
+web: gunicorn gapminder_app:server
