@@ -21,7 +21,6 @@ gapminder_app.layout = html.Div([
 @gapminder_app.callback(
     Output('scatter', 'srcDoc'),
     Input('xcol-widget', 'value'))
-
 def plot_chart(xcol):
     chart = alt.Chart(gm_2018).mark_point(filled=True).encode(
         x=xcol,
