@@ -7,7 +7,7 @@ gm = pd.read_csv('data/gapminder_2018.csv', parse_dates=['year'])
 gm_2018 = gm[gm['year'] == '2018-01-01']
 
 # Set-up the app and user interface
-gapminder_app = Dash(__name__,  external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+gapminder_app = Dash(__name__)
 server = gapminder_app.server
 
 gapminder_app.layout = html.Div([
